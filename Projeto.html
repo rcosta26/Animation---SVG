@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto II </title>
+
+</head>
+
+<body>
+	<SVG width="1000" height="600" style="background-color : lightgray">
+
+
+			<!-- Script para remoção da bola grande-->
+		<script type="text/ecmascript">
+			
+			function jump(event) {
+				window.open("segundaparte.html","_self")
+			}
+			
+			
+		</script>
+		
+
+
+
+		<!-- Circulo de alerta-->
+		<g>
+			<circle id="circle" cx="200" cy="200" r="10" stroke="orange" stroke-width="2" fill="gray" />
+			<animate xlink:href="#circle" attributeName="cx" from=200 to="350" begin="0.5s" dur="3s" id="comeco" />
+			<set xlink:href="#circle" attributeName="cx" to="350" begin="3" end="3.5s" />
+			<set xlink:href="#circle" attributeName="fill" from="gray" to="rgb(255, 0, 0)" begin="3" end="3.5s" />
+			<set xlink:href="#circle" attributeName="stroke" from="gray" to="rgb(255, 0, 0)" begin="3" end="3.5s" />
+			<set xlink:href="#circle" attributeName="r" from="10" to="13" begin="3" end="3.5s" />
+			<animate xlink:href="#circle" attributeName="cx" from="345" to="200" begin="3.5s" dur="2.5s" repeatCount="none" />
+		</g>
+
+
+		<!-- Circulos que se mexem-->
+		<g>
+			<circle id="circle2" cx="180" cy="210" r="12" stroke="orange" stroke-width="2" fill="gray" />
+			<animate xlink:href="#circle2" attributeName="cx" to="-100" begin="3.5s" dur="5s" repeatCount="none" id="foge1x" />
+			<animate xlink:href="#circle2" attributeName="cy" to="150" begin="3.5s" dur="5s" repeatCount="none" id="foge1y" />
+		</g>
+
+		<g>
+			<circle id="circle3" cx="200" cy="220" r="9" stroke="orange" stroke-width="2" fill="gray" />
+			<animate xlink:href="#circle3" attributeName="cx" to="-100" begin="3.5s" dur="5s" repeatCount="none" id="foge2" />
+		</g>
+
+
+		<!-- Circulos random-->
+		<circle id="circler1"  cx="680" cy="170" r="10" stroke="orange" stroke-width="2" fill="gray" />
+		<animate xlink:href="#circler1" attributeName="cx" to="-30" begin="0s" dur="8s" repeatCount="none" />
+		<circle id="circler2"  cx="440" cy="150" r="10" stroke="orange" stroke-width="2" fill="gray" />
+		<animate xlink:href="#circler2" attributeName="cx" to="-30" begin="0s" dur="8s" repeatCount="none" />
+		<circle id="circler3"  cx="400" cy="320" r="10" stroke="orange" stroke-width="2" fill="gray" />
+		<animate xlink:href="#circler3" attributeName="cx" to="-30" begin="0s" dur="8s" repeatCount="none" />
+		<circle id="circler4"  cx="700" cy="300" r="10" stroke="orange" stroke-width="2" fill="gray" />
+		<animate xlink:href="#circler4" attributeName="cx" to="-30" begin="0s" dur="8s" repeatCount="none" />
+
+
+ 
+
+		<!-- Circulo Gigante-->
+		<g>
+			<circle onclick="jump()" id="circlegrande" cx="1000" cy="320" r="250" stroke="black" stroke-width="7" stroke-opacity="0.5" fill="rgb(77, 0, 0)" />
+			<set xlink:href="#circlegrande" attributeName="fill" from="rgb(77, 0, 0)" to="darkred" begin="mouseover" end="mouseout" />
+			<text x="50%" y="8%" text-anchor="middle" stroke="black" stroke-width="1px">Salve os Estudantes da Esmad Clique na Bola Gigante !!! </text>
+			<animate xlink:href="#circlegrande" attributeName="cx" to="150" begin="0s" dur="8s" repeatCount="none" id="foge1x" />
+		</g>
+
+
+		
+
+	</SVG>
+
+</body>
+
+</html>

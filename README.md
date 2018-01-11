@@ -7,8 +7,6 @@
      Done in Graphic Animation, small experience with SVG
     <br>
     <br>
-    <a href="https://github.com/rcosta26/Animation---SVG/Projeto.html">Show</a>
-    <br>
     ESMAD - (P.PORTO)
     <br>
   </p>
